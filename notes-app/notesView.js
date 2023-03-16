@@ -13,6 +13,11 @@ class NotesView {
   }
 
   displayNotes() {
+    const list = (document.querySelectorAll('.note'))
+    list.forEach(note => {
+      note.remove()
+    });
+    this.noteInput.value = ''
     const notes = this.notesModel.getNotes();
 
     notes.forEach(note => {

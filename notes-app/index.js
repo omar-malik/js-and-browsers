@@ -6,6 +6,4 @@ const notesView = new NotesView(notesModel);
 
 
 
-notesModel.addNote('This is an example note');
-notesView.displayNotes();
 
